@@ -114,7 +114,7 @@
           <configuration>
             <launcher>launcher</launcher>
             <jlinkImageName>image-annotator</jlinkImageName>
-            <jlinkZipName>ia-zip</jlinkZipName>
+            <!--jlinkZipName>ia-zip</jlinkZipName-->
             <mainClass>io.javasmithy.AppEntry</mainClass>
             <commandlineArgs>-Djavax.net.debug=all</commandlineArgs>
           </configuration>

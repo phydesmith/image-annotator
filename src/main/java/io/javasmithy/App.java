@@ -22,8 +22,9 @@ public class App extends Application {
     public void start(Stage stage) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main-layout.fxml"));
-            stage.setScene(new Scene( (Parent) loader.load(), 1280, 720));
+            stage.setScene(new Scene( (Parent) loader.load(), 1920, 1008));
             ((MainController)loader.getController()).setStage(stage);
+            stage.setMaximized(true);
             stage.setTitle("Image Annotator");
             stage.show();
         } catch (IOException e) {
