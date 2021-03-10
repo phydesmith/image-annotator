@@ -22,7 +22,7 @@ public class App extends Application {
     public void start(Stage stage) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main-layout.fxml"));
-            stage.setScene(new Scene( (Parent) loader.load(), 800, 400));
+            stage.setScene(new Scene( (Parent) loader.load(), 1280, 720));
             ((MainController)loader.getController()).setStage(stage);
             stage.setTitle("Image Annotator");
             stage.show();
